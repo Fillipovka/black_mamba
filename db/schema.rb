@@ -10,24 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171110195043) do
-
+ActiveRecord::Schema.define(version: 20_171_110_195_043) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension 'plpgsql'
 
-  create_table "profiles", force: :cascade do |t|
-    t.bigint "user_id"
-    t.string "first_name"
-    t.string "last_name"
-    t.string "phone_number"
-    t.string "avatar_url"
-    t.index ["user_id"], name: "index_profiles_on_user_id"
+  create_table 'profiles', force: :cascade do |t|
+    t.bigint 'user_id'
+    t.string 'first_name'
+    t.string 'last_name'
+    t.string 'phone_number'
+    t.string 'avatar_url'
+    t.index ['user_id'], name: 'index_profiles_on_user_id'
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "email"
-    t.string "password_digest"
+  create_table 'users', force: :cascade do |t|
+    t.string 'username'
+    t.string 'email'
+    t.string 'password_digest'
   end
-
 end
