@@ -1,0 +1,18 @@
+development:
+  cloud_name: dfjmvlorn
+  api_key: '851296992749994'
+  api_secret: oGnOvPplZ0113wfOX3Mx7uve-KM
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dfjmvlorn
+  api_key: '851296992749994'
+  api_secret: oGnOvPplZ0113wfOX3Mx7uve-KM
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dfjmvlorn
+  api_key: '851296992749994'
+  api_secret: oGnOvPplZ0113wfOX3Mx7uve-KM
+  enhance_image_tag: true
+  static_image_support: false

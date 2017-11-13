@@ -31,6 +31,13 @@ class UsersController < ActionController::API
     render json: user
   end
 
+  def avatar
+    data = ActiveSupport::Base64.encode64[:data]
+    image = Cloudinary::Uploader.upload(data)
+
+    render json: { status: 'ok' }
+  end
+
   private
 
   def user_params

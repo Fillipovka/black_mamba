@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :users, only: %i[create update]
 
   post '/sign_in', to: 'auth#sign_in'
+  post '/avatar', to: 'users#avatar'
 end
